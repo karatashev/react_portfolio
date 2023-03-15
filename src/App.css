@@ -1,0 +1,204 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  height: 100px;
+}
+
+.header h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+
+.header p {
+  font-size: 4rem;
+  line-height: 3.8rem;
+  position: absolute;
+  top: 40%;
+  left: 135%;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+
+.about_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  
+}
+
+.about_text {
+  line-height: 1.3rem;
+  font-size: 1.25rem;
+  max-width: 576px;
+  color: rgba(220, 220, 220, 0.787);
+}
+
+.about_text span {
+  font-weight: 700;
+}
+
+/* Coffe container */
+
+.coffee_container {
+  position: relative;
+  top: 5%;
+  left: 190%;
+}
+.coffee_cup {
+  position: relative;
+  width: 100px;
+  height: 80px;
+  box-sizing: border-box;
+  border: 7px solid #fff;
+  border-radius: 5px 5px 40px 40px;
+  background: none;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.coffee_handle {
+  position: relative;
+  top: -70px;
+  left: 95px;
+  width: 30px;
+  height: 40px;
+  background: transparent;
+  box-sizing: border-box;
+  border: 5px solid #fff;
+  border-radius: 0 10px 25px 0; 
+}
+
+.coffee_cup::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: -60px;
+  width: 200px;
+  height: 200px;
+  background: #01C38D;
+  border-radius: 70px;
+  animation: loading 5s linear infinite;
+  overflow: hidden;
+}
+
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rething a {
+  background: #fcff47; 
+  background: -webkit-linear-gradient(to right, #fcff47, #bfc133);
+  background: linear-gradient(to right, #fcff47, #bfc133); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.resume a {
+color: #01C38D;
+}
+
+.instagram a {
+  background: #ff4500;
+  background: -webkit-linear-gradient(to right, #de6133, #943411);
+  background: linear-gradient(to right, #de6133, #943411); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hashnode a {
+  background: #5a87e2;
+  background: -webkit-linear-gradient(to right, #5a87e2, #3682d3); 
+  background: linear-gradient(to right, #5a87e2, #3682d3); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.email a {
+  color: #fff;
+  
+}
+
+
+.btn_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  /* width: 100%; */
+  margin-top: 2rem;
+}
+
+.btn {
+  position: relative;
+  z-index: 10;
+  width: 200px;
+  height: 60px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  outline: none;
+  cursor: pointer;
+  font-family: 'League Spartan', sans-serif;
+}
+.btn::before {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  z-index: -1;
+  width: 100px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #01C38D;
+  filter: blur(10px);
+  content: "";
+  transition: .5s;
+}
+.btn:hover::before {
+  transform: scale(2);
+}
