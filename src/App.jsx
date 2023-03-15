@@ -111,10 +111,7 @@ function App() {
       <p className='animate__animated animate__fadeInLeftBig animate__delay-4s'>#learningNeverStops</p>
       
 
-      {/* <div className="btn_container">
-        <button className="btn">CONTACT
-</button>
-      </div> */}
+ 
     </div>
   );
 }
