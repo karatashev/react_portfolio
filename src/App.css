@@ -16,6 +16,8 @@ a {
 }
 
 
+
+
 .header {
   display: flex;
   flex-direction: row;
@@ -46,7 +48,7 @@ a {
 
 h2 {
   margin-bottom: 1.5rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 
@@ -59,11 +61,13 @@ h2 {
 }
 
 .about_text {
-  line-height: 1.3rem;
+  line-height: 1.4rem;
   font-size: 1.25rem;
   max-width: 576px;
-  color: rgba(220, 220, 220, 0.787);
+  color: #dcdcdcc9;
+  letter-spacing: 0.3px;
 }
+  
 
 .about_text span {
   font-weight: 700;
@@ -156,16 +160,65 @@ color: #01C38D;
 
 .email a {
   color: #fff;
-  
+}
+
+.exp {
+  color: #fff;
 }
 
 
-.btn_container {
+.social_media {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+}
+
+.social_media a {
+  font-size: 30px;
+  margin: 0.5rem 0.5rem 0 0;
+  color: #dcdcdcc9;
+}
+
+.social_media a:hover {
+  color: #fff;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+.neon {
+  position: relative;
+  top: 30%;
+  border-radius: 10px;
+  left: 0%;
+  margin-bottom: 0.7rem;
+  width: 180px;
+  height: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px #01C38D,
+              0 0 25px #01C38D,
+              0 0 50px #01C38D,
+              0 0 100px #01C38D;
+}
+
+
+@media screen and (min-width: 576px) {
+  .about_text {
+    font-size: 1.45rem;
+    line-height: 1.55rem;
+}
+  .App {
+    padding: 60px;
+  }
+
+  }
+
+/* .btn_container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  /* width: 100%; */
+  
   margin-top: 2rem;
 }
 
@@ -201,4 +254,5 @@ color: #01C38D;
 }
 .btn:hover::before {
   transform: scale(2);
-}
+} */
+
