@@ -52,7 +52,7 @@ function App() {
           <span className="resume">
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/1AtBWtZjMHdgWC3O1veTDbeafIk2PzAFy/view"
+              href="https://drive.google.com/file/d/1AtBWtZjMHdgWC3O1veTDbeafIk2PzAFy/view?usp=sharing"
             >
               resume
             </a>
