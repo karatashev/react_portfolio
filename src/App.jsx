@@ -37,12 +37,12 @@ function App() {
           I am Frontend Developer who is giving strong importance to details and
           aesthetics while creating better UI/UX for the projects I am working
           with. I currently work at{" "}
-          <span className="rething">
+          <span className="eterative">
             <a
               target="_blank"
-              href="https://www.linkedin.com/company/rethingse/mycompany/"
+              href="https://www.eterative.com/"
             >
-              ReThing
+              Eterative
             </a>
           </span>{" "}
           as a Frontend Developer. My experience in the industry is{" "}
